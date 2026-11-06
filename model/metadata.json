@@ -1,0 +1,145 @@
+{
+  "dataset": "UCI Dry Bean Dataset (id 602), CC BY 4.0, DOI 10.24432/C50S4B",
+  "rows_loaded": 13611,
+  "duplicates_removed": 68,
+  "rows_used": 13543,
+  "train_rows": 10834,
+  "test_rows": 2709,
+  "features": [
+    "Area",
+    "Perimeter",
+    "MajorAxisLength",
+    "MinorAxisLength",
+    "AspectRatio",
+    "Eccentricity",
+    "ConvexArea",
+    "EquivDiameter",
+    "Extent",
+    "Solidity",
+    "Roundness",
+    "Compactness",
+    "ShapeFactor1",
+    "ShapeFactor2",
+    "ShapeFactor3",
+    "ShapeFactor4"
+  ],
+  "target": "Class",
+  "classes": [
+    "BARBUNYA",
+    "BOMBAY",
+    "CALI",
+    "DERMASON",
+    "HOROZ",
+    "SEKER",
+    "SIRA"
+  ],
+  "class_counts": {
+    "full": {
+      "DERMASON": 3546,
+      "SIRA": 2636,
+      "SEKER": 2027,
+      "HOROZ": 1860,
+      "CALI": 1630,
+      "BARBUNYA": 1322,
+      "BOMBAY": 522
+    },
+    "train": {
+      "DERMASON": 2837,
+      "SIRA": 2109,
+      "SEKER": 1621,
+      "HOROZ": 1488,
+      "CALI": 1304,
+      "BARBUNYA": 1057,
+      "BOMBAY": 418
+    },
+    "test": {
+      "DERMASON": 709,
+      "SIRA": 527,
+      "SEKER": 406,
+      "HOROZ": 372,
+      "CALI": 326,
+      "BARBUNYA": 265,
+      "BOMBAY": 104
+    }
+  },
+  "split": {
+    "test_size": 0.2,
+    "stratified": true,
+    "random_state": 42
+  },
+  "tuned_settings": {
+    "Logistic Regression": {
+      "C": 50.0
+    },
+    "Decision Tree": {
+      "max_depth": 10,
+      "min_samples_leaf": 10
+    },
+    "K-Nearest Neighbours": {
+      "n_neighbors": 11,
+      "weights": "distance"
+    },
+    "Gaussian Naive Bayes": {
+      "var_smoothing": 1e-09
+    },
+    "Support Vector Machine": {
+      "C": 10.0
+    }
+  },
+  "cv_macro_f1": {
+    "Logistic Regression": 0.9377,
+    "Decision Tree": 0.9238,
+    "K-Nearest Neighbours": 0.9374,
+    "Gaussian Naive Bayes": 0.7632,
+    "Support Vector Machine": 0.9437
+  },
+  "test_metrics": {
+    "Logistic Regression": {
+      "Accuracy": 0.9203,
+      "AUC": 0.9949,
+      "Precision": 0.9319,
+      "Recall": 0.9297,
+      "F1": 0.9306,
+      "MCC": 0.9037
+    },
+    "Decision Tree": {
+      "Accuracy": 0.9044,
+      "AUC": 0.9797,
+      "Precision": 0.9179,
+      "Recall": 0.9166,
+      "F1": 0.9171,
+      "MCC": 0.8844
+    },
+    "K-Nearest Neighbours": {
+      "Accuracy": 0.9147,
+      "AUC": 0.9888,
+      "Precision": 0.9292,
+      "Recall": 0.9257,
+      "F1": 0.9271,
+      "MCC": 0.8969
+    },
+    "Gaussian Naive Bayes": {
+      "Accuracy": 0.763,
+      "AUC": 0.967,
+      "Precision": 0.7736,
+      "Recall": 0.7685,
+      "F1": 0.7669,
+      "MCC": 0.7143
+    },
+    "Support Vector Machine": {
+      "Accuracy": 0.924,
+      "AUC": 0.9904,
+      "Precision": 0.936,
+      "Recall": 0.9344,
+      "F1": 0.9351,
+      "MCC": 0.908
+    }
+  },
+  "versions": {
+    "python": "3.12.10",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "joblib": "1.6.0"
+  }
+}
