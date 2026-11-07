@@ -8,3 +8,4 @@ pandas==3.0.5
 joblib==1.6.0
 matplotlib==3.11.2
 openpyxl==3.1.5
+jinja2==3.1.6
