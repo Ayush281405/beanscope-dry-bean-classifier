@@ -1,0 +1,10 @@
+# Pinned so the saved .joblib models load with the same library versions
+# they were trained with (train locally / on the lab VM with Python 3.12).
+streamlit==1.67.0
+scikit-learn==1.9.1
+scipy==1.18.1
+numpy==2.5.3
+pandas==3.0.5
+joblib==1.6.0
+matplotlib==3.11.2
+openpyxl==3.1.5
